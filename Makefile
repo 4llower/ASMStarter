@@ -32,7 +32,7 @@ CMD = $(CMD_INTERFACE) $(1)
 MOVE_CMD = $(call CMD,"copy $(1) $(2)") \
 $(call CMD, "del $(1)")
 
-all: build execute
+all: build deb
 
 init:
 	mkdir -p debug
